@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Input your ID and Password."
+AuthUserFile /export/sd207/www/jp/r/e/gmoserver/7/2/sd0834372/plusta-menber.dev-bm.com/.htpasswd
+require valid-user

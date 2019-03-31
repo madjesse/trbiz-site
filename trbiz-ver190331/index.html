@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>TRbizメンバーサイト</title>
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2,user-scalable=2">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" href="img/android-touch-icon.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon_150.png" sizes="150x150">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon_180.png" sizes="180x180">
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/hamburger.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/magnific-popup.css" rel="stylesheet">
+  <script src="js/jquery-1.8.1.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script>
+    (function($) {
+      $(function() {
+        var $header = $('header');
+        // Nav Toggle Button
+        $('#nav-toggle,#global-nav ul li').click(function() {
+          $header.toggleClass('open');
+        });
+      });
+    })(jQuery);
+  </script>
+  <script>
+    $(function() {
+      $('.popup-image').magnificPopup({
+        type: 'image'
+      });
+    })
+  </script>
+  <script>
+    $(function() {
+      $(".acc dd").css("display", "none");
+      $(".acc dt").click(function() {
+        if ($("+dd", this).css("display") == "none") {
+          $("+dd", this).slideDown("slow");
+          $(this).addClass("selected");
+        } else {
+          $("+dd", this).slideUp("slow");
+          $(this, ".selected").removeClass("selected");
+        }
+      });
+    });
+  </script>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <script defer="" src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+
+
+<body id="Body">
+  <div id="wrap">
+    <header>
+      <div class="inner">
+        <div id="mobile-head">
+          <h1><img id="logo" src="img/trbiz-logo-white.png" alt="trbiz"></h1>
+          <ul class="cf contact_link_wrap">
+            <li><a href="tel:0116245409"><img src="img/header_phone.png" alt="0116245409"></a>
+            </li>
+            <li><a href="mailto:info@plusta-sapporo.com"><img src="img/header_mail.png" alt="info@plusta-sapporo.com"></a>
+            </li>
+          </ul>
+          <div id="nav-toggle">
+            <div>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        <nav id="global-nav">
+          <ul>
+
+            <li><a href="#bazaar">新着情報</a></li>
+            <li><a href="#absence">お知らせ</a></li>
+            <li><a href="#saturday">職員予定</a></li>
+            <li><a href="#staff">スタッフ紹介</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+
+    <main>
+      <section class="main_title">
+        <h1 class="title_logo"><img src="img/trbiz_logo.png" alt=""></h1>
+        <!--/.title_logo-->
+      </section>
+      <!--/.main_title -->
+      <section class="emergency">
+        <div class="container">
+          <h2 class="emergency_title">緊急のお知らせ</h2>
+          <!--/.emergency_title-->
+          <p>ここに緊急のメッセージをいれます</p>
+        </div>
+        <!--/.container-->
+      </section>
+      <!--/.emergency-->
+      <section class="sub_title">
+        <h2 class="sub_t_logo">
+          <p>このサイトは</p>
+          <p>トラビズメンバー専用情報共有サイトです！</p>
+          <p class="sankaku">▼</p>
+        </h2>
+        <!--/.sub_t_logo-->
+      </section>
+      <!--/.sub_title-->
+      <div id="ContWrap" class="wrap">
+        <section id="news" class="news">
+          <h2>
+            <p class="h2_title_eng">NEWS</p>
+            <!--/.h2_title_eng-->
+            <p class="h2_title_kanji">新着情報</p>
+            <!--/.h2_title_kanji-->
+          </h2>
+          <div class="container">
+            <dl>
+              <dt class="news_title">
+                <time class="news_date">2019.XX.XX</time>
+                <!--/.news_date-->
+                <p>新着タイトル</p>
+              </dt>
+              <!--/.news_title-->
+              <dd>
+                <p class="news_tex">texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext</p>
+                <!--/.news_tex-->
+              </dd>
+            </dl>
+          </div>
+          <!--/.container-->
+        </section>
+        <!--/.news-->
+        <section id="info" class="info">
+          <h2>
+            <p class="h2_title_eng">INFOMATION</p>
+            <!--/.h2_title_eng-->
+            <p class="h2_title_kana">お知らせ</p>
+            <!--/.h2_title_kana-->
+          </h2>
+          <section class="container">
+            <ul class="info_list" id="info">
+              <li class="employee">
+                <button class="info_title">
+                  <div class="info_img">
+                    <img src="img/ttl_01.png" alt="">
+                  </div>
+                  <!--/.info_img-->
+                  <h3 class="info_title_tex">職員不在のお知らせ</h3>
+                  <!--/.info_title_tex-->
+                  <!-- <i class="fas fa-chevron-up"></i> -->
+                </button>
+                <!--/.info_title-->
+                <ul>
+
+                  <li class="info_cont">
+                    <div class="ContWrap">
+                      <div class="container">
+                        <ul>
+                          <li class="info_cont_Title">XX月</li>
+                          <li class="info_cont_tex">誰か</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex">誰か</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex">誰か</li>
+                          <!--/.info_cont_tex-->
+                        </ul>
+                      </div>
+                      <!--/.container-->
+                      <div class="container">
+                        <ul>
+                          <li class="info_cont_Title">XX月</li>
+                          <!--/.info_cont_Title-->
+                          <li class="info_cont_tex">誰か</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex">誰か</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex">誰か</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex">誰か</li>
+                          <!--/.info_cont_tex-->
+                        </ul>
+                      </div>
+                      <!--/.container-->
+                    </div>
+                  </li>
+                  <!--/.info_cont-->
+                </ul>
+              </li>
+              <!--/.employee-->
+              <li class="sataday">
+                <button class="info_title">
+                  <div class="info_img">
+                    <img src="img/ttl_02.png" alt="">
+                  </div>
+                  <!--/.info_img-->
+                  <h3 class="info_title_tex">開所土曜日のお知らせ</h3>
+                  <!--/.info_title_tex-->
+                  <!-- <i class="fas fa-chevron-up"></i> -->
+                </button>
+                <!--/.info_title-->
+                <ul>
+
+                  <li class="info_cont">
+                    <div class="ContWrap">
+                      <div class="container">
+                        <ul>
+                          <li class="info_cont_Title">XX月</li>
+                          <!--/.info_cont_Title-->
+                          <li class="info_cont_tex">ＺＺ日</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex">ＺＺ日</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex">ＺＺ日</li>
+                          <!--/.info_cont_tex-->
+
+                        </ul>
+                        <ul class="info_sub">
+                          <li>規定日数YY日</li>
+                          <li>開所日数XX日</li>
+                        </ul>
+                        <!--/.info_sub-->
+                      </div>
+                      <!--/.container-->
+                      <div class="container">
+                        <ul>
+                          <li class="info_cont_Title">XX月</li>
+                          <!--/.info_cont_Title-->
+                          <li class="info_cont_tex">ＺＺ日</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex">ＺＺ日</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex">ＺＺ日</li>
+                          <!--/.info_cont_tex-->
+
+                        </ul>
+                        <ul class="info_sub">
+                          <li>規定日数YY日</li>
+                          <li>開所日数XX日</li>
+                        </ul>
+                        <!--/.info_sub-->
+                      </div>
+                      <!--/.container-->
+                    </div>
+                  </li>
+                  <!--/.info_cont-->
+                </ul>
+              </li>
+              <!--/.sataday-->
+              <li class="salary">
+                <button class="info_title">
+                  <div class="info_img">
+                    <img src="img/ttl_03.png" alt="">
+                  </div>
+                  <!--/.info_img-->
+                  <h3 class="info_title_tex">工賃支給日</h3>
+                  <!-- <i class="fas fa-chevron-up"></i> -->
+                </button>
+                <!--/.info_title-->
+                <ul>
+
+                  <li class="info_cont">
+                    <div class="ContWrap">
+                      <div class="container">
+                        <ul>
+                          <li class="info_cont_Title">XX月</li>
+                          <!--/.info_cont_Title-->
+                          <li class="info_cont_tex">ＺＺ日</li>
+                          <!--/.info_cont_tex-->
+                        </ul>
+                      </div>
+                      <!--/.container-->
+                      <div class="container">
+                        <ul>
+                          <li class="info_cont_Title">XX月</li>
+                          <!--/.info_cont_Title-->
+                          <li class="info_cont_tex">ＺＺ日</li>
+                          <!--/.info_cont_tex-->
+                        </ul>
+                      </div>
+                      <!--/.container-->
+                    </div>
+                  </li>
+                  <!--/.info_cont-->
+                </ul>
+              </li>
+              <!--/.salary-->
+              <li class="event">
+                <button class="info_title">
+                  <div class="info_img">
+                    <img src="img/ttl_04.png" alt="">
+                  </div>
+                  <!--/.info_img-->
+                  <h3 class="info_title_tex">イベント</h3>
+                  <!--/.info_title_tex-->
+                  <!-- <i class="fas fa-chevron-up"></i> -->
+                </button>
+                <!--/.info_title-->
+                <ul>
+                  <li class="info_cont">
+                    <div class="ContWrap">
+                      <div class="container">
+                        <ul>
+                          <li class="info_cont_Title">XX月ZZ日</li>
+                          <!--/.info_cont_Title-->
+                          <li class="info_cont_tex">
+                            <h4>イベントタイトル</h4>
+                            <p>texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext</p>
+                          </li>
+                          <!--/.info_cont_tex-->
+
+                        </ul>
+                      </div>
+                      <!--/.container-->
+                      <div class="container">
+                        <ul>
+                          <li class="info_cont_Title">XX月ZZ日</li>
+                          <!--/.info_cont_Title-->
+                          <li class="info_cont_tex">
+                            <h4>イベントタイトル</h4>
+                            <p>texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext</p>
+                          </li>
+                          <!--/.info_cont_tex-->
+
+                        </ul>
+                      </div>
+                      <!--/.container-->
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="event holiday">
+                <button class="info_title">
+                  <div class="info_img">
+                    <img src="img/ttl_05.png" alt="">
+                  </div>
+                  <!--/.info_img-->
+                  <h3 class="info_title_tex">長期連休のお知らせ</h3>
+                  <!--/.info_title_tex-->
+                  <!-- <i class="fas fa-chevron-up"></i> -->
+                </button>
+
+                <ul>
+
+                  <li class="info_cont">
+                    <div class="ContWrap">
+                      <div class="container">
+                        <ul>
+                          <li class="info_cont_Title">XXYY年度のZZZZ</li>
+                          <!--/.info_cont_Title-->
+                          <li class="info_cont_tex">
+                            <p>XX月YY日～ZZ日はお休み</p>
+                          </li>
+                          <!--/.info_cont_tex-->
+                        </ul>
+                      </div>
+                      <!--/.container-->
+                      <div class="container">
+                        <ul>
+                          <li class="info_cont_Title">ゴールデンウィーク</li>
+                          <!--/.info_cont_Title-->
+                          <li class="info_cont_tex">
+                            <p>XX月YY日～ZZ日はお休み</p>
+                          </li>
+                          <!--/.info_cont_tex-->
+                        </ul>
+                      </div>
+                      <!--/.container-->
+                    </div>
+                  </li>
+                  <!--/.info_cont-->
+                </ul>
+              </li>
+
+            </ul>
+            <script src="js/accordion.js"></script>
+            <!--/#info-->
+          </section>
+          <!--/.container/#info-->
+        </section>
+        <!--/.info-->
+        <section id="Other" class="other">
+          <h2>
+            <p class="h2_title_eng">OTHER</p>
+            <p class="h2_title_kana">その他のご案内</p>
+          </h2>
+          <section class="container">
+            <ul id="other" class="info_list">
+              <li>
+                <button class="info_title" id="staff_title">
+                  <div class="info_img">
+                    <img src="img/ttl_09.png" alt="">
+                  </div>
+                  <!--/.info_img-->
+                  <h3 class="info_title_tex">スタッフ紹介</h3>
+                  <!--/.info_title_tex-->
+                  <!-- <i class="fas fa-chevron-up"></i> -->
+                </button>
+                <ul id="staff_info">
+                  <!--/.info_title_tex-->
+                  <li class="staff info_cont">
+                    <div class="ContWrap">
+                      <div class="container">
+                        <div class="info_cont_Title ">
+
+                          <!--/.info_cont_tex-->
+                          <img src="img/face00.jpg" alt="">真壁　良太<span class="rubi">まかべ　りょうた</span>
+                          <span class="info_cont_tex Degree">施設長・WEB・DTP指導員</span>
+                        </div>
+                        <ul class="info_cont_tex_Wrap">
+                          <li class="info_cont_tex">出身</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex">栃木県</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex">趣味</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex">映画・アニメ鑑賞、スポーツ観戦</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex">好物</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex">ジンギスカン</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex">
+                            <h5 class="staffs_voice">職員から一言</h5>
+                            <p>指導員としてはＥＣサイト運営会社や映像制作会社での経験を活かせればと思っております。</p>
+                            <p>わからないことがあれば遠慮せず何でも聞いてくださいね。</p>
+                            <p>家は子供が二人と、イヌのモコちゃん、ネコの大福くんがいまして、毎日にぎやかです。</p>
+                          </li>
+                          <!--/.info_cont_tex-->
+                        </ul>
+                      </div>
+                      <!--/.container-->
+                      <div class="container">
+                        <div class="info_cont_Title"><img src="img/face00.jpg" alt="">清野　慶子<span class="rubi">せいの　けいこ</span>
+                          <span class="info_cont_tex Degree">サービス管理責任者</span>
+
+                        </div>
+                        <ul class="info_cont_tex_Wrap">
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex ">出身</li>
+                          <li class="info_cont_tex ">音更町</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex ">趣味</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex">家の猫さん（複数）を愛でる事、お料理<br>海外ドラマを見続ける事、本を読む事。</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex">好物</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex">チョコレート</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex">
+                            <h5 class="staffs_voice">職員から一言</h5>
+                            <p>サービス管理責任者です。</p>
+                            <p>元々は高齢者福祉で働いていましたが「もっと福祉を知りたい!!」と思い、勢いよく障がい福祉の分野に。日々勉強していきたいと思います。</p>
+                            <p>心配な事や不安な事があれば、何でも気軽に相談してくださいね。</p>
+                          </li>
+                          <!--/.info_cont_tex-->
+                        </ul>
+                      </div>
+                      <!--/.container-->
+                      <div class="container">
+                        <div class="info_cont_Title"><img src="img/face00.jpg" alt="">魏 晨曦<span class="rubi">ウェイ　チェンシ</span>
+                          <span class="info_cont_tex Degree">WEB・DTP指導員</span></div>
+                        <ul class="info_cont_tex_Wrap">
+
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex ">出身</li>
+                          <li class="info_cont_tex ">中国・湖南省</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex ">趣味</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex">サッカー観戦、コーヒーを淹れること、旅行、写真撮影、読書</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex">好物</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex">コーヒー、日本料理、韓国料理、イタリアン、タイカレー、ナン</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex">
+                            <h5 class="staffs_voice">職員から一言</h5>
+                            <p>大学卒業後３年ほどグラフィックデザインとＷＥＢデザインの仕事をしました。</p>
+                            <p>イラストレーターやフォトショップ、ＷＥＢに関する質問なら、私にお任せください。</p>
+                          </li>
+                          <!--/.info_cont_tex-->
+                        </ul>
+                      </div>
+                      <!--/.container-->
+                      <div class="container">
+                        <div class="info_cont_Title"><img src="img/face00.jpg" alt="">菅原　涼<span class="rubi">すがわら　りょう</span>
+                          <span class="info_cont_tex Degree">office担当　指導員 </span></div>
+                        <ul class="info_cont_tex_Wrap">
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex ">出身</li>
+                          <li class="info_cont_tex ">札幌市</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex ">趣味</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex">釣り</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex">好物</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex">肉全般、特に鳥のから揚げ</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex">
+                            <h5 class="staffs_voice">職員から一言</h5>
+                            <p>高齢者福祉の分野で１０年以上働いていました。</p>
+                            <p>皆さんと切磋琢磨しながらお互い成長出来たらと思っています。</p>
+                            <p>御用があってもなくても気軽に声掛けて下さい！</p>
+                          </li>
+                          <!--/.info_cont_tex-->
+                        </ul>
+                      </div>
+                      <!--/.container-->
+                      <div class="container">
+                        <div class="info_cont_Title"><img src="img/face00.jpg" alt="">吉田　麻美<span class="rubi">よしだ　あさみ</span><span class="info_cont_tex Degree">イラスト・ＤＴＰ指導員</span>
+                          <!--/.info_cont_tex-->
+                        </div>
+                        <ul class="info_cont_tex_Wrap">
+
+                          <li class="info_cont_tex ">出身</li>
+                          <li class="info_cont_tex ">函館市</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex ">趣味</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex">家事全般、部屋の模様替え、雑学</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex">好物</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex">イカ、玉子、発酵食品</li>
+                          <!--/.info_cont_tex-->
+                          <li class="info_cont_tex">
+                            <h5 class="staffs_voice">職員から一言</h5>
+                            <p>イラストや漫画は物心つくころから描いて、鑑賞して、読んでいるので、生活の一部です。</p>
+                            <p>キャラクター造詣、ペンタブで線画を描くのが得意です～</p>
+                          </li>
+                          <!--/.info_cont_tex-->
+                        </ul>
+                      </div>
+                      <!--/.container-->
+                    </div>
+                  </li>
+                  <!--/.info_cont-->
+                </ul>
+              </li>
+              <li>
+                <button class="info_title" id="exit_title">
+                  <div class="info_img">
+                    <img src="img/ttl_10.png" alt="">
+                  </div>
+                  <!--/.info_img-->
+                  <h3 class="info_title_tex">緊急時の避難</h3>
+                  <!--/.info_title_tex-->
+                  <!-- <i class="fas fa-chevron-up"></i> -->
+                </button>
+                <!--/.info_title /#exit_title-->
+                <ul id="exit_info">
+                  <li class="exit info_cont">
+                    <div class="ContWrap">
+                      <div class="container">
+                        <ul class="exit_road">
+                          <li class="info_cont_Title">避難経路</li>
+                          <li class="exit_img">
+                            <a href=""><img src="img/hinann_02.png" alt=""></a>
+                          </li>
+                          <!--/.-->
+                        </ul>
+                        <ul class="exit_road">
+                          <li class="info_cont_Title">避難所への経路</li>
+                          <li class="exit_img"><a href=""><img src="img/hinann_01.png" alt=""></a></li>
+                          <!--/.-->
+                        </ul>
+                      </div>
+                      <!--/.container-->
+                    </div>
+                  </li>
+                  <!--/.info_cont-->
+                </ul>
+              </li>
+            </ul>
+            <!-- /#other-->
+            <script src="js/accordion2.js"></script>
+          </section>
+          <!--/.container-->
+        </section>
+        <!--/.other-->
+        <section id="Map" class="trbiz_map container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d23304.160602819513!2d141.340036!3d43.104093!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x5f0b29bb591d1863%3A0x7cdbd675d0d38635!2z57aZ57aa5pSv5o-044OI44Op44OT44K644CB44CSMDAxLTAwMzYg5YyX5rW36YGT5pyt5bmM5biC5YyX5Yy65YyX77yT77yW5p2h6KW_77yU5LiB55uu77yS4oiS77yVIOesrDLms4rjg5Pjg6sgMUY!3m2!1d43.1028502!2d141.34001469999998!5e0!3m2!1sja!2sjp!4v1552364727593" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <section>
+        <h5>継続支援トラビズ</h5>
+        <address>
+          <p>札幌市北区北36条西4丁目2-5 第2泊ビル 1F</p>
+          <div id="contact_link">
+            <p>TEL：011-624-5409</p>
+            <p>FAX：011-624-6409</p>
+            <p>MAIL：info@plusta-sapporo.com</p>
+          </div>
+        </address>
+      </section>
+      <div id="copy">
+        <p>&#169;継続支援トラビズ&nbsp;All&nbsp;Rights&nbsp;Reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <script src="js/totop.js"></script>
+</body>
+
+</html>
