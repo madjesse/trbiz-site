@@ -56,11 +56,17 @@
 
 
 <body id="Body">
+<!-- the inner wrapper for the whole body---------------------------------------------------------------------------------------------------->
   <div id="wrap">
+<!--   header-------------------------------------------------------------------------------------------------------------------------------->
     <header>
       <div class="inner">
         <div id="mobile-head">
-          <h1><img id="logo" src="img/trbiz-logo-white.png" alt="trbiz"></h1>
+          <h1>
+          	<a href="index.html">
+				<img id="logo" src="img/trbiz-logo-white.png" alt="trbiz">
+          	</a>
+          </h1>
           <ul class="cf contact_link_wrap">
             <li><a href="tel:0116245409"><img src="img/header_phone.png" alt="0116245409"></a>
             </li>
@@ -87,34 +93,37 @@
         </nav>
       </div>
     </header>
+<!--end of header---------------------------------------------------------------------------------------------------------------------------->
 
-
-
+<!--main------------------------------------------------------------------------------------------------------------------------------------->
     <main>
+<!--     logo section------------------------------------------------------------------------------------------------------------------------>
       <section class="main_title">
         <h1 class="title_logo"><img src="img/trbiz_logo.png" alt=""></h1>
-        <!--/.title_logo-->
       </section>
-      <!--/.main_title -->
+<!--end of logo section---------------------------------------------------------------------------------------------------------------------->
+<!--     emergency is not displayed by default----------------------------------------------------------------------------------------------->
       <section class="emergency">
         <div class="container">
           <h2 class="emergency_title">緊急のお知らせ</h2>
           <!--/.emergency_title-->
           <p>ここに緊急のメッセージをいれます</p>
         </div>
-        <!--/.container-->
-      </section>
-      <!--/.emergency-->
+      </section>  
+<!--end of emergency ------------------------------------------------------------------------------------------------------------------------>
+<!--      this is the main message of the site----------------------------------------------------------------------------------------------->
       <section class="sub_title">
         <h2 class="sub_t_logo">
           <p>このサイトは</p>
           <p>トラビズメンバー専用情報共有サイトです！</p>
           <p class="sankaku">▼</p>
         </h2>
-        <!--/.sub_t_logo-->
       </section>
-      <!--/.sub_title-->
+<!------------------------------------------------------------------------------------------------------------------------------------------->
+     
+<!--     #ContWrap is the wrapper for the major content of the main-------------------------------------------------------------------------->
       <div id="ContWrap" class="wrap">
+<!---------------news------------------------------------------------------------------------------------------------------------------------>
         <section id="news" class="news">
           <h2>
             <p class="h2_title_eng">NEWS</p>
@@ -122,6 +131,8 @@
             <p class="h2_title_kanji">新着情報</p>
             <!--/.h2_title_kanji-->
           </h2>
+          
+<!--          this is the section to be updated---------------------------------------------------------------------------------------------->
           <div class="container">
             <dl>
               <dt class="news_title">
@@ -132,13 +143,15 @@
               <!--/.news_title-->
               <dd>
                 <p class="news_tex">texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext</p>
-                <!--/.news_tex-->
               </dd>
             </dl>
           </div>
-          <!--/.container-->
+<!--          end of the section to be updated---------------------------------------------------------------------------------------------->
+       
         </section>
-        <!--/.news-->
+<!---------------end of news----------------------------------------------------------------------------------------------------------------->
+        
+<!---------------info------------------------------------------------------------------------------------------------------------------------>
         <section id="info" class="info">
           <h2>
             <p class="h2_title_eng">INFOMATION</p>
@@ -146,30 +159,27 @@
             <p class="h2_title_kana">お知らせ</p>
             <!--/.h2_title_kana-->
           </h2>
+          
+<!--          the multiple accordions with infomation to be updated-------------------------------------------------------------------------->
           <section class="container">
+<!--           the list of accordions------------------------------------------------------------------------------------------>
             <ul class="info_list" id="info">
+             
+<!--				職員不在のお知らせ---------------------------------------------------------------------------------------------------------->
               <li class="employee">
                 <button class="info_title">
-                  <div class="info_img">
-                    <img src="img/ttl_01.png" alt="">
-                  </div>
-                  <!--/.info_img-->
-                  <h3 class="info_title_tex">職員不在のお知らせ</h3>
-                  <!--/.info_title_tex-->
-                  <!-- <i class="fas fa-chevron-up"></i> -->
+					<img src="img/ttl_01.png" alt="職員予定">
+					<p class="accordion-btn-txt">職員予定</p>
                 </button>
-                <!--/.info_title-->
+<!--                the list of messages-->
                 <ul>
-
                   <li class="info_cont">
                     <div class="ContWrap">
                       <div class="container">
                         <ul>
                           <li class="info_cont_Title">XX月</li>
                           <li class="info_cont_tex">誰か</li>
-                          <!--/.info_cont_tex-->
                           <li class="info_cont_tex">誰か</li>
-                          <!--/.info_cont_tex-->
                           <li class="info_cont_tex">誰か</li>
                           <!--/.info_cont_tex-->
                         </ul>
@@ -189,23 +199,17 @@
                           <!--/.info_cont_tex-->
                         </ul>
                       </div>
-                      <!--/.container-->
                     </div>
                   </li>
-                  <!--/.info_cont-->
                 </ul>
               </li>
-              <!--/.employee-->
-              <li class="sataday">
-                <button class="info_title">
-                  <div class="info_img">
-                    <img src="img/ttl_02.png" alt="">
-                  </div>
-                  <!--/.info_img-->
-                  <h3 class="info_title_tex">開所土曜日のお知らせ</h3>
-                  <!--/.info_title_tex-->
-                  <!-- <i class="fas fa-chevron-up"></i> -->
-                </button>
+              
+<!--				土曜日開所のお知らせ------------------------------------------------------------------------------>
+              <li class="saturday">
+				  <button class="info_title">
+					  <img src="img/ttl_02.png" alt="土曜開所予定">
+					  <p class="accordion-btn-txt">土曜開所予定</p>
+				  </button>
                 <!--/.info_title-->
                 <ul>
 
@@ -254,16 +258,13 @@
                   <!--/.info_cont-->
                 </ul>
               </li>
-              <!--/.sataday-->
+                       
+<!--				工賃支給日---------------------------------------------------------------------------------------->
               <li class="salary">
-                <button class="info_title">
-                  <div class="info_img">
-                    <img src="img/ttl_03.png" alt="">
-                  </div>
-                  <!--/.info_img-->
-                  <h3 class="info_title_tex">工賃支給日</h3>
-                  <!-- <i class="fas fa-chevron-up"></i> -->
-                </button>
+				  <button class="info_title">
+					  <img src="img/ttl_03.png" alt="工賃支給日">
+					  <p class="accordion-btn-txt">工賃支給日</p>
+				  </button>
                 <!--/.info_title-->
                 <ul>
 
@@ -292,17 +293,13 @@
                   <!--/.info_cont-->
                 </ul>
               </li>
-              <!--/.salary-->
+              
+<!--				イベント---------------------------------------------------------------------------------------->
               <li class="event">
-                <button class="info_title">
-                  <div class="info_img">
-                    <img src="img/ttl_04.png" alt="">
-                  </div>
-                  <!--/.info_img-->
-                  <h3 class="info_title_tex">イベント</h3>
-                  <!--/.info_title_tex-->
-                  <!-- <i class="fas fa-chevron-up"></i> -->
-                </button>
+				  <button class="info_title">
+					  <img src="img/ttl_04.png" alt="イベント">
+					  <p class="accordion-btn-txt">イベント</p>
+				  </button>
                 <!--/.info_title-->
                 <ul>
                   <li class="info_cont">
@@ -337,19 +334,14 @@
                   </li>
                 </ul>
               </li>
-              <li class="event holiday">
-                <button class="info_title">
-                  <div class="info_img">
-                    <img src="img/ttl_05.png" alt="">
-                  </div>
-                  <!--/.info_img-->
-                  <h3 class="info_title_tex">長期連休のお知らせ</h3>
-                  <!--/.info_title_tex-->
-                  <!-- <i class="fas fa-chevron-up"></i> -->
-                </button>
-
+              
+<!--				長期連休のお知らせ---------------------------------------------------------------------------------------->
+              <li class="long-holiday">
+				  <button class="info_title">
+					  <img src="img/ttl_05.png" alt="長期連休のお知らせ">
+					  <p class="accordion-btn-txt">長期連休の<br>お知らせ</p>
+				  </button>
                 <ul>
-
                   <li class="info_cont">
                     <div class="ContWrap">
                       <div class="container">
@@ -379,14 +371,17 @@
                   <!--/.info_cont-->
                 </ul>
               </li>
-
             </ul>
+<!--           the list of accordions------------------------------------------------------------------------------------------>
+           
             <script src="js/accordion.js"></script>
             <!--/#info-->
           </section>
-          <!--/.container/#info-->
+<!--        end of the multiple accordions with infomation to be updated--------------------------------------------------------------->
+       
         </section>
-        <!--/.info-->
+<!---------------end of info----------------------------------------------------------------------------------------------------------------->
+
         <section id="Other" class="other">
           <h2>
             <p class="h2_title_eng">OTHER</p>
@@ -395,15 +390,10 @@
           <section class="container">
             <ul id="other" class="info_list">
               <li>
-                <button class="info_title" id="staff_title">
-                  <div class="info_img">
-                    <img src="img/ttl_09.png" alt="">
-                  </div>
-                  <!--/.info_img-->
-                  <h3 class="info_title_tex">スタッフ紹介</h3>
-                  <!--/.info_title_tex-->
-                  <!-- <i class="fas fa-chevron-up"></i> -->
-                </button>
+				  <button class="info_title">
+					  <img src="img/ttl_05.png" alt="スタッフ紹介">
+					  <p class="accordion-btn-txt">スタッフ紹介</p>
+				  </button>
                 <ul id="staff_info">
                   <!--/.info_title_tex-->
                   <li class="staff info_cont">
@@ -550,15 +540,10 @@
                 </ul>
               </li>
               <li>
-                <button class="info_title" id="exit_title">
-                  <div class="info_img">
-                    <img src="img/ttl_10.png" alt="">
-                  </div>
-                  <!--/.info_img-->
-                  <h3 class="info_title_tex">緊急時の避難</h3>
-                  <!--/.info_title_tex-->
-                  <!-- <i class="fas fa-chevron-up"></i> -->
-                </button>
+				  <button class="info_title">
+					  <img src="img/ttl_05.png" alt="緊急時の避難">
+					  <p class="accordion-btn-txt">緊急時の避難</p>
+				  </button>
                 <!--/.info_title /#exit_title-->
                 <ul id="exit_info">
                   <li class="exit info_cont">
@@ -594,7 +579,11 @@
           <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d23304.160602819513!2d141.340036!3d43.104093!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x5f0b29bb591d1863%3A0x7cdbd675d0d38635!2z57aZ57aa5pSv5o-044OI44Op44OT44K644CB44CSMDAxLTAwMzYg5YyX5rW36YGT5pyt5bmM5biC5YyX5Yy65YyX77yT77yW5p2h6KW_77yU5LiB55uu77yS4oiS77yVIOesrDLms4rjg5Pjg6sgMUY!3m2!1d43.1028502!2d141.34001469999998!5e0!3m2!1sja!2sjp!4v1552364727593" frameborder="0" style="border:0" allowfullscreen></iframe>
         </section>
       </div>
+<!--      end of the #ContWrap--------------------------------------------------------------------------------------------------------------->
     </main>
+<!--    end of the main---------------------------------------------------------------------------------------------------------------------->
+    
+<!--    footer------------------------------------------------------------------------------------------------------------------------------->
     <footer>
       <section>
         <h5>継続支援トラビズ</h5>
@@ -611,7 +600,9 @@
         <p>&#169;継続支援トラビズ&nbsp;All&nbsp;Rights&nbsp;Reserved.</p>
       </div>
     </footer>
+<!--    end of footer------------------------------------------------------------------------------------------------------------------------>
   </div>
+<!--  end of the inner wrapper of the whole body--------------------------------------------------------------------------------------------->
   <script src="js/totop.js"></script>
 </body>
 
