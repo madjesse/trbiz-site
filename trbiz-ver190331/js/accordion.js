@@ -7,7 +7,7 @@ var infoOuter = [].slice.call(infoIndex);
 var infoOuterBtn = [].slice.call(infoIndex);
 var ChBtn1 = [].slice.call(infoOuter);
 ChBtn1.fill(0);
-var AllHeight = 0;
+var AllHeight;
 for (var i = 0; i < infoIndex.length; i++) {
     infoOuter[i] = infoIndex[i].children;
     var infoOuterIndex = [].slice.call(infoOuter);

@@ -4,13 +4,16 @@
 html {
    font-size: 62.5%;
 }
+* {
+	box-sizing: border-box;
+}
 .cf:after {
     content: '.';
     height: 0;
     line-height: 0;
     visibility: hidden;
     display: block;
-    clear: both
+    clear: both;
 }
 * {
     box-sizing: border-box;
@@ -31,16 +34,8 @@ a:hover {
 }
 
 img {
-    vertical-align: bottom;
     width: 100%;
     display: block;
-}
-
-@font-face {
-    font-family: 'Noto Sans CJK JP';
-    font-style: normal;
-    font-weight: 400;
-    src: local("Noto Sans CJK JP Regular"), url(../font/NotoSansCJKjp-Regular.woff2) format("woff2"), url(../font/NotoSansCJKjp-Regular.woff) format("woff"), url(../font/NotoSansCJKjp-Regular.otf) format("opentype");
 }
 
 html {
@@ -54,8 +49,9 @@ html {
 }
 
 body {
-    font-family: Noto Sans CJK JP;
-    font-size: 14px;
+    font-family: "Yu Gothic", "YuGothic", "游ゴシック体", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "MS PGothic", "ＭＳ Ｐゴシック", "Meiryo", "メイリオ", "Osaka", sans-serif;
+	font-weight: bold;
+}
 
 }
 
@@ -64,7 +60,6 @@ html {
 }
 
 button {
-    font-family: Noto Sans CJK JP;
     letter-spacing: .2rem;
 }
 
@@ -160,8 +155,7 @@ button {
     max-width: 600px;
 }
 
-.news,
-.info,
+.new-arrivals,
 .other {
     padding-top: 70px;
 
@@ -171,32 +165,32 @@ button {
     width: 40vw;
     min-width: 300px;
     max-width: 450px;
-    margin-right: auto;
-    margin-left: auto;
+	margin: 0 auto 50px;
     text-align: center;
 }
 
+.h2_title_eng, .h2_title_kanji {
+	font-weight: bold;
+}
 .h2_title_eng {
-    font-family: serif;
-    font-size: 25px;
-    font-weight: bold;
-    border-bottom: 3px solid #000000;
+	border-bottom: 2px solid #000000;
 }
 
-.news .container,
+.new-arrivals .container,
 .info .container,
 .other .container {
     box-sizing: border-box;
     width: 80%;
     margin: auto;
-    padding-top: 25px;
     padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 25px;
 }
+.info .container {
+	padding: 0;
+}
 
-.news_date {
-    font-size: 12px;
+.new-arrivals-date {
     font-weight: bold;
 }
 
@@ -204,11 +198,25 @@ button {
     margin-bottom: 10%;
 }
 
-.news_title p {
+.new-arrivals-title p {
+	font-weight: bold;
     margin-top: 14px;
     margin-bottom: 14px;
 }
 
+.new-arrivals-title-txt {
+	background-color: #036EB8;
+	color: #fff;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.accordion h3 {
+	font-weight: bold;
+	margin: 10px 0;
+	border-bottom: 1px solid #000;
+	padding-bottom: 5px;
+}
 .info_title {
     box-sizing: border-box;
     display: flex;
@@ -233,30 +241,29 @@ button {
 	transform: rotate(45deg);
 }
 .accordion-btn-txt {
-	width: 100%;
-	font-size: 1.5rem;
+	width: 70%;
+	font-size: 2rem;
 	position: relative;
 	
 }
 .info_title img {
-	width: 100px;
+	width: 30%;
 }
 .info_title svg {
     text-align: center;
     padding: 5%;
 }
-
+.accordion {
+	display: none;
+}
 .info_cont {
-    max-height: 0px;
     overflow: hidden;
     transition: 0.5s;
 }
 
 .ContWrap {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: wrap;
+	flex-direction: column;
 }
 
 .info_cont .container {
@@ -264,23 +271,29 @@ button {
     margin-right: 2.5%;
     margin-bottom: 14px;
     margin-left: 2.5%;
-    padding: 0;
-    width: 45%;
+	padding: 10px;
     height: auto;
 }
-
+.info_cont_tex {
+	font-weight: 600;
+}
 .info_cont .info_sub {
     margin-top: 14px;
 }
 
-.info_cont_Title:before {
-    content: "■";
-}
-
 .info_cont_Title {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-bottom: 10px;
     border-bottom: 1px solid #000000;
     margin-bottom: 14px;
     position: relative;
+}
+
+.info_cont_Title img {
+	width: 70px;
+	margin-right: 20px;
 }
 
 .event .info_cont {
@@ -334,19 +347,6 @@ button {
 .staff .info_cont_Title{
     margin-bottom: 5px;
 }
-.other .info_cont_Title:before {
-    content: "";
-}
-
-
-.info_cont_Title img {
-    vertical-align: middle;
-    width: 20%;
-    padding-right: 14px;
-    padding-bottom: 5px;
-    display: inline;
-
-}
 
 .rubi,
 .Degree {
@@ -398,7 +398,6 @@ button {
 .staff .container li:last-child:after {
     content: "";
 }
-
 .staff .info_cont_tex {
     padding-top: 2.5px;
     padding-bottom: 2.5px;
@@ -547,8 +546,12 @@ main dl {
 main dl dt {
     margin: 0 auto;
     text-align: center;
-    width: 90%;
 }
+.new-arrivals-txt {
+	font-weight: bold;
+}
+
+.
 
 #info {
     overflow: hidden;
@@ -578,21 +581,15 @@ main dl dt {
     z-index: -1;
 }
 
-#absence ul li,
-#saturday ul li,
-#wage ul li {
-    box-sizing: border-box;
-    width: 50%;
-    float: left;
-    padding: 0 2%;
+.saturday img {
+	max-width: 500px;
+}
+.accordion-saturday .container {
+	width: 100%;
+	padding: 0;
+	margin: 0;
 }
 
-#event ul li:not(:last-of-type),
-#staff ul li:not(:last-of-type),
-#evacuation ul li:not(:last-of-type),
-#bazaar ul li:not(:last-of-type) {
-    margin-bottom: 2em;
-}
 
 #event ul li p:first-of-type,
 #bazaar ul li p:first-of-type {
@@ -751,17 +748,19 @@ footer section address {
     width: 90%;
 }
 
-#date,
-#absence,
+#new-arrival,
 #saturday,
+#salary,
 #event,
-#holiday,
-#staff,
-#evacuation,
-#bazaar,
-#wage {
-    margin-top: -4em;
-    padding-top: 4em;
+#long-holiday,
+#other {
+    margin-top: -56px;
+    padding-top: 56px;
+}
+
+#employee {
+	margin-top: -56px;
+    padding-top: 56px;
 }
 
 .acc dt {
@@ -779,4 +778,15 @@ footer section address {
 
 dt.selected span img {
     visibility: visible;
+}
+
+@media (max-width: 360px) {
+	.new-arrivals .container, .info .container, .other .container {
+		padding-left: 0;
+		padding-right: 0;
+		width: 90%;
+	}
+	.accordion-btn-txt {
+		font-size: 1.5rem;
+	}
 }

@@ -40,23 +40,8 @@ document.addEventListener('DOMContentLoaded', function () {
    window.onscroll = function(){
     NowRect();
     };
-
-
-    //    function Scroll() {
-    //        var Now = document.documentElement.scrollTop;
-    //        if (Now > 0) {
-    //            switch (true) {
-    //                case Now > 30:
-    //                    window.scrollBy(0, -15);
-    //                    setTimeout(Scroll, 1);
-    //                    break;
-    //                case 30 >= Now > 0:
-    //                    window.scrollBy(0, -1);
-    //                    setTimeout(Scroll, 1);
-    //                    break;
-    //            };
-    //        };
-    //    };
+	
+	
     // 
 
 }, false);

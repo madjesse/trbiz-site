@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Input your ID and Password."
+AuthUserFile /export/sd207/www/jp/r/e/gmoserver/4/0/sd0342440/sapporokita.trbiz.biz/.htpasswd
+require valid-user
