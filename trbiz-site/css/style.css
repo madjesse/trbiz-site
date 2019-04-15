@@ -256,6 +256,9 @@ button {
 .accordion {
 	display: none;
 }
+.accordion h3 {
+	margin-top: 40px;
+}
 .info_cont {
     overflow: hidden;
     transition: 0.5s;
@@ -276,6 +279,8 @@ button {
 }
 .info_cont_tex {
 	font-weight: 600;
+	margin-top: 20px;
+	line-height: 30px;
 }
 .info_cont .info_sub {
     margin-top: 14px;
